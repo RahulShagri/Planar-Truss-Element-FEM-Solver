@@ -1,1 +1,3 @@
-# 2D-Truss-Element-2-DOF-FEM-Solver
+# 2 Dimensional Truss Element with 2 Degrees of Freedom FEM Solver
+
+<i>Note: Under Development.</i>
