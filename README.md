@@ -12,7 +12,7 @@ Values calculated:
 4. Element strain
 
 Features included:
-1. Import any truss structure sketch from FreeCAD
+1. Import any 2-Dimensional truss structure sketch from FreeCAD
 2. Visualize the original sketch
 3. Control material properties of individual elements
 4. Control support reactions in the X or Y axis for individual nodes
