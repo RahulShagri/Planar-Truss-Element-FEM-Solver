@@ -50,7 +50,7 @@ Features included:
 
 <H3>Step 1: Sketching the structure in FreeCAD</H3>
 
-Create a sketch on FreeCAD and ensure all the elements and nodes are connected, and the sketch is fully constrained (i.e. it is completely green).
+Create a sketch on the <b>XY Plane</b> on FreeCAD and ensure all the elements and nodes are connected, and the sketch is fully constrained (i.e. it is completely green).
 
 ![Create a FreeCAD sketch](instruction_gifs/Step_1.png)
 
