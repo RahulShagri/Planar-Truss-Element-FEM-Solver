@@ -23,10 +23,11 @@ Features included:
 9. Analyse all the results calculated for each element and node
 10. Dark mode
 
-<i><b>Points to note:
+<i><b>Points to note:</b></i>
 
-1. All forces acting downwards are negative and all forces acting upwards are positive.
-2. The user has to make sure the values entered have the correct units. The software does not convert any values entered. Results are obtained based on the values that are entered without converting them to different units. In the following example, the displacements are in mm, reaction forces are in Newton, and stresses are in MPa.</b></i>
+<i><b> 1. All forces acting downwards are negative and all forces acting upwards are positive.</b></i>
+
+<i><b> 2. The user has to make sure the values entered have the correct units. The software does not convert any values entered. Results are obtained based on the values that are entered without converting them to different units. In the following example, the displacements are in mm, reaction forces are in Newton, and stresses are in MPa.</b></i>
 
 
 <H1>Instructions</H1>
