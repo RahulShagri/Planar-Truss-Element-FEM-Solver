@@ -159,6 +159,18 @@ def run_checks_and_solve(sender, data):
 
 
 def reset_data(sender, data):
+
+    global element_data
+    global node_data
+    global no_of_elements
+    global no_of_nodes
+    global Q_result
+    global stress_result
+    global strain_result
+    global reaction_force_result
+    global total_displacement_result
+    global new_node_result
+
     close_popup("Reset Confirmation Window")
 
     clear_log(logger="log")
@@ -199,6 +211,17 @@ def reset_data(sender, data):
 
     clear_plot("Sketch_diagram")
 
+    element_data = None
+    node_data = None
+    no_of_elements = None
+    no_of_nodes = None
+    Q_result = None
+    stress_result = None
+    strain_result = None
+    reaction_force_result = None
+    total_displacement_result = None
+    new_node_result = np.array([])
+
 
 def load_FCStd(path, file_name):
     global element_data
@@ -238,8 +261,8 @@ def load_FCStd(path, file_name):
 
     configure_item("Solve!", enabled=True)
     configure_item("Reset", enabled=True)
-    configure_item("Show element numbers", enabled=True)
-    configure_item("Show node numbers", enabled=True)
+    set_value("Show element numbers", True)
+    set_value("Show node numbers", True)
     configure_item("Diagram Tools", enabled=True)
 
 # noinspection PyTypeChecker
@@ -704,14 +727,14 @@ with window("Solve", x_pos=0, y_pos=650, no_resize=True, no_move=True, no_collap
     add_spacing()
     add_button("Yes##Solve", width=150, callback=run_checks_and_solve)
     add_same_line(spacing=10)
-    add_button("No", width=150, callback=close_window, callback_data="Solve Window")
+    add_button("No##Solve", width=150, callback=close_window, callback_data="Solve Window")
 
     add_popup("Reset", 'Reset Confirmation Window', modal=True, mousebutton=mvMouseButton_Left)
     add_text("Are you sure you want to Reset?")
     add_spacing()
     add_button("Yes##Reset", width=150, callback=reset_data)
     add_same_line(spacing=10)
-    add_button("No", width=150, callback=close_window, callback_data="Reset Window")
+    add_button("No##Reset", width=150, callback=close_window, callback_data="Reset Window")
 
 with window("##Result_and_diagram_Window", x_pos=460, y_pos=0, no_resize=True, no_move=True, no_collapse=True, no_close=True, width=895, height=490, no_title_bar=True):
     add_tab_bar("ResultAndDiagram")
