@@ -2,7 +2,7 @@ from dearpygui.core import *
 from dearpygui.simple import *
 from FCStd_loader import *
 from Table_API import *
-from matrix_assember_and_solver import *
+from Matrix_assember_and_solver import *
 import webbrowser
 
 element_data = None
