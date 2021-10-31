@@ -1,5 +1,6 @@
 # Planar Truss Element FEM Solver
 
+***Note: Since the release of this app, Dear PyGui has been updated considerably. This app will not run in the newer versions of Dear PyGui. Please note that this app is not being maintained currently.**
 
 <H1>About</H1>
 
